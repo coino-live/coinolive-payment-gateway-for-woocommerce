@@ -30,7 +30,7 @@ For detailed information on how to install, configure, and use the Coino Live Wo
 
 ## Support
 
-For any questions, issues, or feedback related to the Coino Live WooCommerce Plugin, please reach out to our support team at [support@coinolive.com](mailto:support@coinolive.com).
+For any questions, issues, or feedback related to the Coino Live WooCommerce Plugin, please reach out to our support team at [support@coino.live](mailto:support@coino.live).
 
 ## Contributing
 
