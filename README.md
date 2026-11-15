@@ -1,65 +1,78 @@
- # Coino Live Crypto Payments WooCommerce Plugin
+# Coino Live Crypto Payments for WooCommerce
 
-Welcome to the Coino Live WooCommerce Plugin repository!
+Accept USDT, Bitcoin, Ethereum, TRON, TON, Solana and more in WooCommerce. Orders are marked paid automatically.
 
-Coino Live is a leading crypto payment gateway that allows businesses to accept various cryptocurrencies securely and seamlessly. This WooCommerce plugin enables easy integration of Coino Live's payment gateway into your WooCommerce store, allowing you to accept cryptocurrency payments from your customers.
+**Version 1.1.1** · requires WordPress 6.2+, WooCommerce 7.6+, PHP 7.4+
 
-## Why Choose Us?
+- Download the ready-to-install zip: [coinolive-woocommerce-1.1.1.zip](https://coino.live/downloads/coinolive-woocommerce-1.1.1.zip) · [WooCommerce plugin page](https://coino.live/woocommerce)
+- API reference: [coino.live/api-guide](https://coino.live/api-guide) · Support: [support@coino.live](mailto:support@coino.live)
 
-- **No KYC:** You can sign up and start accepting payments in minutes, with just an email address and a password.
-- **Sky's the Limit:** You can access your money anytime, anywhere, and in any currency you prefer.
-- **Affordable and Fair:** We charge only a flat fee of 0.25% per transaction.
-- **Safe and Sound:** We use the latest encryption and security protocols to protect your data and funds.
-- **Seamless and Simple:** We provide a user-friendly interface. You can also customize your payment page and checkout process to suit your brand and preferences.
+> **Updating from the old version?** Earlier code in this repository used the Coino Live API v1, which has been retired: its endpoints (`/api/v1/...`) no longer answer. This version uses the current [API v2](https://coino.live/api-guide). Replace the old files with these.
 
+## Description
+
+Customers choose "Pay with crypto" at checkout, pick a coin and network on the Coino Live payment page and send the amount shown. The order updates by itself:
+
+- **On hold** as soon as the payment is seen on the network,
+- **Processing** (or Completed for virtual products) once it is confirmed,
+- **Failed** if the payment window closes unpaid. The customer can pay again from their account.
+
+Payments are credited to your Coino Live balance; withdraw to your own wallet from the Coino Live dashboard.
+
+- Prices in your shop currency (USD, EUR, GBP, TRY, BRL, RUB and more) are converted at the current rate.
+- Works with the block checkout and the classic checkout, and with High-Performance Order Storage.
+- Underpayments: the customer is told exactly how much is still missing and can send the rest.
+- Secure by design: order status always comes from the Coino Live API, never from the content of a callback.
+- WooCommerce > Coino Live shows your balance and every payment with its transactions, without leaving WordPress.
 
 ## Installation
 
-To install the Coino Live WooCommerce Plugin, follow these steps:
+1. Upload the plugin (Plugins > Add New > Upload Plugin) and activate it.
+2. In your Coino Live dashboard, open Developers and create an API key for your gateway.
+3. In WooCommerce > Settings > Payments > Coino Live, paste the key, tick "Enable" and save. The page confirms the connection.
 
-1. Download the latest version of the plugin from the [releases page](https://github.com/coino-live/coinolive-payment-gateway-for-woocommerce/releases).
-2. Upload the plugin files to the `/wp-content/plugins/coinolive-payment-gateway-for-woocommerce` directory, or install the plugin through the WordPress plugins screen directly.
-3. Activate the plugin through the 'Plugins' screen in WordPress.
-4. Configure the plugin settings by navigating to WooCommerce > Settings > Payments > Coino Live.
+Optional: paste the gateway's webhook signing secret (whsec_…) so callbacks with a wrong signature are refused.
 
-For detailed installation and configuration instructions, refer to our [Documentation](https://coino.live/document).
+Nothing else to configure: the callback URL (`/wp-json/coinolive/v1/webhook`) is sent with every payment. If callbacks cannot reach your site, open orders are still checked every five minutes and when the customer returns to your shop.
 
-## Documentation
+## Frequently Asked Questions
 
-For detailed information on how to install, configure, and use the Coino Live WooCommerce Plugin, please refer to our [Documentation](https://coino.live/document).
+### Which coins can customers use?
 
-## Support
+Every coin and network enabled on Coino Live: USDT and USDC on TRON, Ethereum, BSC, Polygon, Base, Arbitrum, Solana and TON, plus BTC, LTC, DOGE, ETH, BNB, TRX, TON, SOL and more.
 
-For any questions, issues, or feedback related to the Coino Live WooCommerce Plugin, please reach out to our support team at [support@coino.live](mailto:support@coino.live).
+### Who pays the network fee?
 
-## Contributing
+You choose in your Coino Live gateway settings: the customer (added to the amount) or you (deducted from the payment).
 
-We welcome contributions from the community to improve the Coino Live WooCommerce Plugin. If you have any suggestions, bug fixes, or feature requests, please open an issue or submit a pull request.
+### Can I refund from WooCommerce?
 
-## Connect with Us
+Not automatically. Send refunds from your Coino Live balance.
 
-Stay updated with the latest news and updates from Coino Live:
+## External services
 
-- Follow us on [Twitter](https://twitter.com/coino_live)
-- Follow us on [Instagran](https://www.instagram.com/coino.live)
-- Follow us on [Linkedin](https://linkedin.com/company/coino-live)
-- Subscribe to our [Blog](https://coino.live/blog)
-  
-## Products
+This plugin connects to the Coino Live API (https://coino.live/api/v2), the crypto payment service it is built for. It cannot work without it.
 
-- [Accept Crypto Payments](https://coino.live/crypto-gateway)
-- [Personal Crypto Gateway](https://coino.live/personal-crypto-gateway)
-- [Crypto Donation](https://coino.live/crypto-donation)
-- [Invoice Manager](https://coino.live/invoice-manager)
-- [POS Crypto Payment Terminal](https://coino.live/point-of-sale)
-- [Crypto Form Builder](https://coino.live/form-builder)
+- When a customer chooses Coino Live at checkout, it sends the order total and shop currency, the order number and a short description ("Order #… at your shop name"), the customer's billing email, the return and checkout URLs, the payment window, the WooCommerce order ID, your site address and the callback URL.
+- To update orders (after a callback, when the customer returns, and every five minutes for open orders), it reads the payment by its ID.
+- It reads the list of supported currencies (at most every 12 hours) to check that your shop currency can be used. The WooCommerce > Coino Live page reads your balances and this shop's payments.
 
-## Links
+Every request is authenticated with the API key you enter. The service is provided by Coino Live: [Terms of Service](https://coino.live/terms-of-service), [Privacy Policy](https://coino.live/privacy-policy).
 
-- [Website](https://coino.live)
-- [About Us](https://coino.live/about)
-- [Contact Us](https://coino.live/contact)
-- [FAQ](https://coino.live/faq)
+## Changelog
 
+### 1.1.1
+- Tested with WordPress 7.1.
+- Error messages are escaped where they are created.
+- The readme lists what the plugin sends to the Coino Live API (External services).
 
-Thank you for choosing Coino Live for your cryptocurrency payment gateway needs!
+### 1.1.0
+- New page WooCommerce > Coino Live: your balance and this shop's payments with their transactions.
+- Clear error when the API URL points at a website instead of the API.
+
+### 1.0.0
+- First release for Coino Live API v2.
+
+## License
+
+GPL-2.0-or-later. See https://www.gnu.org/licenses/gpl-2.0.html

@@ -1,0 +1,30 @@
+.coinolive-admin h1 img { vertical-align: middle; margin-right: 4px; }
+.coinolive-admin h2 { margin-top: 1.6em; }
+
+.coinolive-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; margin: 12px 0 8px; }
+.coinolive-card { background: #fff; border: 1px solid #dcdcde; border-radius: 6px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+.coinolive-card span { color: #646970; font-size: 12px; }
+.coinolive-card strong { font-size: 18px; line-height: 1.3; word-break: break-all; }
+.coinolive-card em { color: #646970; font-style: normal; font-size: 12px; }
+.coinolive-card a { margin-top: 4px; text-decoration: none; }
+.coinolive-total { border-color: #2271b1; box-shadow: inset 3px 0 0 #2271b1; }
+.coinolive-total strong { font-size: 22px; }
+
+.coinolive-search { float: right; margin: 8px 0; }
+.coinolive-payments { clear: both; }
+.coinolive-payments small { color: #646970; }
+.coinolive-payments .coinolive-short { color: #b32d2e; }
+.coinolive-tx + .coinolive-tx { margin-top: 6px; }
+.coinolive-tx code { font-size: 11px; padding: 1px 4px; }
+
+.coinolive-status { display: inline-block; padding: 2px 8px; border-radius: 4px; background: #f0f0f1; color: #50575e; font-size: 12px; line-height: 1.8; white-space: nowrap; }
+.coinolive-status-paid { background: #c6e1c6; color: #2c4700; }
+.coinolive-status-partially_paid, .coinolive-status-confirming { background: #f8dda7; color: #573b00; }
+.coinolive-status-open { background: #e5f0fa; color: #0a4b78; }
+.coinolive-status-expired, .coinolive-status-cancelled { background: #eba3a3; color: #570000; }
+
+@media (max-width: 782px) {
+	.coinolive-search { float: none; }
+	.coinolive-payments th:nth-child(5), .coinolive-payments td:nth-child(5),
+	.coinolive-payments th:nth-child(7), .coinolive-payments td:nth-child(7) { display: none; }
+}

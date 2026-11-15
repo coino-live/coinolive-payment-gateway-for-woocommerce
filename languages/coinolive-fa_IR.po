@@ -1,0 +1,246 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fa_IR\n"
+"X-Domain: coinolive\n"
+
+msgid "Coino Live Crypto Payments needs WooCommerce to be installed and active."
+msgstr "افزونه پرداخت رمزارزی Coino Live به ووکامرس نصب‌شده و فعال نیاز دارد."
+
+msgid "Settings"
+msgstr "تنظیمات"
+
+msgid "Dashboard"
+msgstr "داشبورد"
+
+msgid "Every five minutes"
+msgstr "هر پنج دقیقه"
+
+msgid "Coino Live"
+msgstr "Coino Live"
+
+msgid "Sorry, you are not allowed to access this page."
+msgstr "شما اجازه دسترسی به این صفحه را ندارید."
+
+msgid "Open Coino Live dashboard"
+msgstr "باز کردن داشبورد Coino Live"
+
+msgid "Add your Coino Live API key to see your balance and payments here."
+msgstr "برای دیدن موجودی و پرداخت‌ها، کلید API را در تنظیمات وارد کنید."
+
+msgid "Balance"
+msgstr "موجودی"
+
+msgid "Total"
+msgstr "مجموع"
+
+msgid "Withdraw"
+msgstr "برداشت"
+
+msgid "Your whole Coino Live account (all gateways), after fees. Withdraw from the Coino Live dashboard."
+msgstr "موجودی کل حساب Coino Live شما (همه درگاه‌ها)، پس از کسر کارمزد. برداشت از داشبورد Coino Live انجام می‌شود."
+
+msgid "No balance yet. Paid orders are added here after fees."
+msgstr "هنوز موجودی ندارید. مبلغ سفارش‌های پرداخت‌شده پس از کسر کارمزد اینجا اضافه می‌شود."
+
+msgid "Payments"
+msgstr "پرداخت‌ها"
+
+msgid "All"
+msgstr "همه"
+
+msgid "Order number"
+msgstr "شماره سفارش"
+
+msgid "Search"
+msgstr "جستجو"
+
+msgid "Date"
+msgstr "تاریخ"
+
+msgid "Order"
+msgstr "سفارش"
+
+msgid "Status"
+msgstr "وضعیت"
+
+msgid "Amount"
+msgstr "مبلغ"
+
+msgid "Received"
+msgstr "دریافت‌شده"
+
+msgid "Transactions"
+msgstr "تراکنش‌ها"
+
+msgid "No payments found."
+msgstr "پرداختی پیدا نشد."
+
+msgid "Newer"
+msgstr "جدیدتر"
+
+msgid "Older"
+msgstr "قدیمی‌تر"
+
+msgid "%s USD missing"
+msgstr "%s دلار کسری"
+
+msgid "Payment page"
+msgstr "صفحه پرداخت"
+
+msgid "Paid"
+msgstr "پرداخت‌شده"
+
+msgid "Partially paid"
+msgstr "پرداخت ناقص"
+
+msgid "Confirming"
+msgstr "در حال تأیید"
+
+msgid "Waiting for payment"
+msgstr "در انتظار پرداخت"
+
+msgid "Expired"
+msgstr "منقضی‌شده"
+
+msgid "Cancelled"
+msgstr "لغوشده"
+
+msgid "Could not load from Coino Live: %s"
+msgstr "بارگیری از Coino Live ممکن نشد: %s"
+
+msgid "Pay with crypto"
+msgstr "پرداخت با رمزارز"
+
+msgid "The Coino Live API key is not set."
+msgstr "کلید API برای Coino Live تنظیم نشده است."
+
+msgid "Could not reach Coino Live: %s"
+msgstr "اتصال به Coino Live ممکن نشد: %s"
+
+msgid "There is no Coino Live API at %1$s (HTTP %2$d). Check the API URL setting."
+msgstr "در نشانی %1$s هیچ API از Coino Live وجود ندارد (HTTP %2$d). تنظیم «نشانی API» را بررسی کنید."
+
+msgid "Unexpected answer from Coino Live."
+msgstr "پاسخ نامعتبر از Coino Live."
+
+msgid "Coino Live (crypto)"
+msgstr "Coino Live (رمزارز)"
+
+msgid "Customers pay with USDT, Bitcoin, Ethereum, TRON, TON, Solana and other coins on the Coino Live checkout. Orders are marked paid automatically once the payment is confirmed on chain."
+msgstr "مشتریان در صفحه پرداخت Coino Live با تتر، بیت‌کوین، اتریوم، ترون، تون، سولانا و ارزهای دیگر پرداخت می‌کنند. پس از تأیید پرداخت روی شبکه، سفارش به‌طور خودکار پرداخت‌شده ثبت می‌شود."
+
+msgid "Enable"
+msgstr "فعال‌سازی"
+
+msgid "Accept crypto payments with Coino Live"
+msgstr "دریافت پرداخت رمزارزی با Coino Live"
+
+msgid "Title"
+msgstr "عنوان"
+
+msgid "What customers see at checkout."
+msgstr "متنی که مشتری هنگام پرداخت می‌بیند."
+
+msgid "Description"
+msgstr "توضیحات"
+
+msgid "Pay with USDT, Bitcoin, Ethereum, TRON, TON, Solana and more. You will be taken to a secure payment page."
+msgstr "پرداخت با تتر، بیت‌کوین، اتریوم، ترون، تون، سولانا و ارزهای دیگر. به صفحه پرداخت امن منتقل می‌شوید."
+
+msgid "API key"
+msgstr "کلید API"
+
+msgid "Create one in your Coino Live dashboard under Developers. Keys start with ck_live_ (or ck_test_ on the test network)."
+msgstr "از بخش توسعه‌دهندگان در داشبورد Coino Live یک کلید بسازید. کلیدها با ck_live_ (یا در شبکه آزمایشی با ck_test_) شروع می‌شوند."
+
+msgid "Webhook signing secret (optional)"
+msgstr "کلید امضای وب‌هوک (اختیاری)"
+
+msgid "From your gateway settings (whsec_…). When set, callbacks with a wrong signature are refused. Orders are always checked against the API before they change, so this is an extra layer."
+msgstr "از تنظیمات درگاه (whsec_…). اگر وارد شود، فراخوانی‌هایی با امضای نادرست رد می‌شوند. وضعیت سفارش همیشه پیش از تغییر از API بررسی می‌شود، پس این یک لایه امنیتی اضافه است."
+
+msgid "Payment window (minutes)"
+msgstr "مهلت پرداخت (دقیقه)"
+
+msgid "How long the customer has to send the payment. Between 15 and 10080."
+msgstr "مدت زمانی که مشتری برای ارسال پرداخت دارد. بین ۱۵ تا ۱۰۰۸۰."
+
+msgid "Debug log"
+msgstr "گزارش اشکال‌زدایی"
+
+msgid "Log API calls and callbacks (WooCommerce > Status > Logs, source \"coinolive\")"
+msgstr "ثبت درخواست‌های API و فراخوانی‌ها (ووکامرس > وضعیت > گزارش‌ها، منبع «coinolive»)"
+
+msgid "API URL"
+msgstr "نشانی API"
+
+msgid "Leave as is unless Coino Live support tells you otherwise."
+msgstr "تغییر ندهید، مگر اینکه پشتیبانی Coino Live بگوید."
+
+msgid "Callback URL (set automatically on every payment, nothing to configure):"
+msgstr "نشانی فراخوانی (برای هر پرداخت خودکار ارسال می‌شود و نیازی به تنظیم ندارد):"
+
+msgid "Balance and payments"
+msgstr "موجودی و پرداخت‌ها"
+
+msgid "The API URL must start with https://."
+msgstr "نشانی API باید با https:// شروع شود."
+
+msgid "Connected, but Coino Live cannot price payments in %s yet. The payment method stays hidden at checkout."
+msgstr "اتصال برقرار شد، اما Coino Live هنوز پرداخت با واحد %s را پشتیبانی نمی‌کند. این روش پرداخت در صفحه پرداخت نمایش داده نمی‌شود."
+
+msgid "Connected to Coino Live."
+msgstr "اتصال به Coino Live برقرار شد."
+
+msgid "Coino Live refused the API key: %s"
+msgstr "Coino Live کلید API را نپذیرفت: %s"
+
+msgid "Crypto payment is not available right now: %s"
+msgstr "پرداخت رمزارزی در حال حاضر در دسترس نیست: %s"
+
+msgid "A payment for this order is already on its way. Please wait for it to confirm."
+msgstr "پرداختی برای این سفارش در حال انجام است. لطفاً تا تأیید آن صبر کنید."
+
+msgid "Order #%1$s at %2$s"
+msgstr "سفارش #%1$s در %2$s"
+
+msgid "Coino Live returned a payment that does not belong to this order. Please try again."
+msgstr "Coino Live پرداختی برگرداند که مربوط به این سفارش نیست. لطفاً دوباره تلاش کنید."
+
+msgid "Coino Live payment %1$s created (%2$s USD). Waiting for the customer to pay."
+msgstr "پرداخت Coino Live با شناسه %1$s ساخته شد (%2$s دلار). در انتظار پرداخت مشتری."
+
+msgid "Coino Live payment is paid but was for %1$s, the order expects %2$s. Check before shipping."
+msgstr "پرداخت Coino Live انجام شده اما مبلغ آن %1$s بوده و سفارش %2$s است. پیش از ارسال بررسی کنید."
+
+msgid "Coino Live: the payment was sent and is waiting for network confirmations."
+msgstr "Coino Live: پرداخت ارسال شده و در انتظار تأیید شبکه است."
+
+msgid "Coino Live: only %1$s of %2$s USD received so far. The customer was asked to send the rest."
+msgstr "Coino Live: تاکنون فقط %1$s از %2$s دلار دریافت شده است. از مشتری خواسته شد باقی‌مانده را ارسال کند."
+
+msgid "Coino Live: the payment closed with %1$s of %2$s USD received (in your Coino Live balance). Settle the rest with the customer."
+msgstr "Coino Live: مهلت پرداخت با دریافت %1$s از %2$s دلار به پایان رسید (این مبلغ در موجودی Coino Live شماست). باقی‌مانده را با مشتری تسویه کنید."
+
+msgid "Coino Live: the payment window closed without payment. The customer can pay again from their account."
+msgstr "Coino Live: مهلت پرداخت بدون دریافت وجه به پایان رسید. مشتری می‌تواند از حساب کاربری خود دوباره پرداخت کند."
+
+msgid "Your crypto payment was received and is being confirmed on the network. We will email you when the order is paid."
+msgstr "پرداخت رمزارزی شما دریافت شد و در حال تأیید روی شبکه است. پس از تکمیل پرداخت به شما ایمیل می‌زنیم."
+
+msgid "We have not seen your payment yet. If you have not paid, you can still do so:"
+msgstr "هنوز پرداخت شما را دریافت نکرده‌ایم. اگر پرداخت نکرده‌اید، هنوز می‌توانید پرداخت کنید:"
+
+msgid "Open the payment page"
+msgstr "باز کردن صفحه پرداخت"
+
+msgid "Coino Live payment %1$s confirmed: %2$s"
+msgstr "پرداخت Coino Live با شناسه %1$s تأیید شد: %2$s"
+
+msgid "Coino Live Crypto Payments"
+msgstr "پرداخت رمزارزی Coino Live"
+
+msgid "Accept USDT, Bitcoin, Ethereum, TRON, TON, Solana and more in WooCommerce. Customers pay on the Coino Live checkout; orders update automatically."
+msgstr "دریافت تتر، بیت‌کوین، اتریوم، ترون، تون، سولانا و ارزهای دیگر در ووکامرس. مشتریان در صفحه پرداخت Coino Live پرداخت می‌کنند و سفارش‌ها خودکار به‌روز می‌شوند."
+

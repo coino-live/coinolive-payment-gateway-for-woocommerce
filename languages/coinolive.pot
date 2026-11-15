@@ -1,0 +1,246 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Coino Live Crypto Payments 1.0.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Domain: coinolive\n"
+
+msgid "Coino Live Crypto Payments needs WooCommerce to be installed and active."
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "Dashboard"
+msgstr ""
+
+msgid "Every five minutes"
+msgstr ""
+
+msgid "Coino Live"
+msgstr ""
+
+msgid "Sorry, you are not allowed to access this page."
+msgstr ""
+
+msgid "Open Coino Live dashboard"
+msgstr ""
+
+msgid "Add your Coino Live API key to see your balance and payments here."
+msgstr ""
+
+msgid "Balance"
+msgstr ""
+
+msgid "Total"
+msgstr ""
+
+msgid "Withdraw"
+msgstr ""
+
+msgid "Your whole Coino Live account (all gateways), after fees. Withdraw from the Coino Live dashboard."
+msgstr ""
+
+msgid "No balance yet. Paid orders are added here after fees."
+msgstr ""
+
+msgid "Payments"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid "Order number"
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "Order"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Amount"
+msgstr ""
+
+msgid "Received"
+msgstr ""
+
+msgid "Transactions"
+msgstr ""
+
+msgid "No payments found."
+msgstr ""
+
+msgid "Newer"
+msgstr ""
+
+msgid "Older"
+msgstr ""
+
+msgid "%s USD missing"
+msgstr ""
+
+msgid "Payment page"
+msgstr ""
+
+msgid "Paid"
+msgstr ""
+
+msgid "Partially paid"
+msgstr ""
+
+msgid "Confirming"
+msgstr ""
+
+msgid "Waiting for payment"
+msgstr ""
+
+msgid "Expired"
+msgstr ""
+
+msgid "Cancelled"
+msgstr ""
+
+msgid "Could not load from Coino Live: %s"
+msgstr ""
+
+msgid "Pay with crypto"
+msgstr ""
+
+msgid "The Coino Live API key is not set."
+msgstr ""
+
+msgid "Could not reach Coino Live: %s"
+msgstr ""
+
+msgid "There is no Coino Live API at %1$s (HTTP %2$d). Check the API URL setting."
+msgstr ""
+
+msgid "Unexpected answer from Coino Live."
+msgstr ""
+
+msgid "Coino Live (crypto)"
+msgstr ""
+
+msgid "Customers pay with USDT, Bitcoin, Ethereum, TRON, TON, Solana and other coins on the Coino Live checkout. Orders are marked paid automatically once the payment is confirmed on chain."
+msgstr ""
+
+msgid "Enable"
+msgstr ""
+
+msgid "Accept crypto payments with Coino Live"
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "What customers see at checkout."
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+msgid "Pay with USDT, Bitcoin, Ethereum, TRON, TON, Solana and more. You will be taken to a secure payment page."
+msgstr ""
+
+msgid "API key"
+msgstr ""
+
+msgid "Create one in your Coino Live dashboard under Developers. Keys start with ck_live_ (or ck_test_ on the test network)."
+msgstr ""
+
+msgid "Webhook signing secret (optional)"
+msgstr ""
+
+msgid "From your gateway settings (whsec_…). When set, callbacks with a wrong signature are refused. Orders are always checked against the API before they change, so this is an extra layer."
+msgstr ""
+
+msgid "Payment window (minutes)"
+msgstr ""
+
+msgid "How long the customer has to send the payment. Between 15 and 10080."
+msgstr ""
+
+msgid "Debug log"
+msgstr ""
+
+msgid "Log API calls and callbacks (WooCommerce > Status > Logs, source \"coinolive\")"
+msgstr ""
+
+msgid "API URL"
+msgstr ""
+
+msgid "Leave as is unless Coino Live support tells you otherwise."
+msgstr ""
+
+msgid "Callback URL (set automatically on every payment, nothing to configure):"
+msgstr ""
+
+msgid "Balance and payments"
+msgstr ""
+
+msgid "The API URL must start with https://."
+msgstr ""
+
+msgid "Connected, but Coino Live cannot price payments in %s yet. The payment method stays hidden at checkout."
+msgstr ""
+
+msgid "Connected to Coino Live."
+msgstr ""
+
+msgid "Coino Live refused the API key: %s"
+msgstr ""
+
+msgid "Crypto payment is not available right now: %s"
+msgstr ""
+
+msgid "A payment for this order is already on its way. Please wait for it to confirm."
+msgstr ""
+
+msgid "Order #%1$s at %2$s"
+msgstr ""
+
+msgid "Coino Live returned a payment that does not belong to this order. Please try again."
+msgstr ""
+
+msgid "Coino Live payment %1$s created (%2$s USD). Waiting for the customer to pay."
+msgstr ""
+
+msgid "Coino Live payment is paid but was for %1$s, the order expects %2$s. Check before shipping."
+msgstr ""
+
+msgid "Coino Live: the payment was sent and is waiting for network confirmations."
+msgstr ""
+
+msgid "Coino Live: only %1$s of %2$s USD received so far. The customer was asked to send the rest."
+msgstr ""
+
+msgid "Coino Live: the payment closed with %1$s of %2$s USD received (in your Coino Live balance). Settle the rest with the customer."
+msgstr ""
+
+msgid "Coino Live: the payment window closed without payment. The customer can pay again from their account."
+msgstr ""
+
+msgid "Your crypto payment was received and is being confirmed on the network. We will email you when the order is paid."
+msgstr ""
+
+msgid "We have not seen your payment yet. If you have not paid, you can still do so:"
+msgstr ""
+
+msgid "Open the payment page"
+msgstr ""
+
+msgid "Coino Live payment %1$s confirmed: %2$s"
+msgstr ""
+
+msgid "Coino Live Crypto Payments"
+msgstr ""
+
+msgid "Accept USDT, Bitcoin, Ethereum, TRON, TON, Solana and more in WooCommerce. Customers pay on the Coino Live checkout; orders update automatically."
+msgstr ""
+
