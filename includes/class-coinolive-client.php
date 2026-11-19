@@ -110,12 +110,12 @@ class CoinoLive_Client {
 		$json   = json_decode( wp_remote_retrieve_body( $response ), true );
 
 		// A redirect or an HTML 404 means the API URL points at a website, not at the API.
-		if ( ( $status >= 300 && $status < 400 ) || ( 404 === $status && ! is_array( $json ) ) ) {
+		if ( ( $status >= 300 && $status < 400 ) || ( 404 === $status && ( ! is_array( $json ) || '' === (string) ( $json['message'] ?? '' ) ) ) ) {
 			/* translators: 1: the API URL from the settings, 2: HTTP status code */
 			throw new CoinoLive_Exception( esc_html( sprintf( __( 'There is no Coino Live API at %1$s (HTTP %2$d). Check the API URL setting.', 'coinolive' ), $this->base_url, $status ) ), (int) $status );
 		}
 		if ( $status < 200 || $status >= 300 ) {
-			$message = is_array( $json ) && isset( $json['message'] ) ? (string) $json['message'] : 'HTTP ' . $status;
+			$message = is_array( $json ) && ! empty( $json['message'] ) ? (string) $json['message'] : 'HTTP ' . $status;
 			if ( is_array( $json ) && ! empty( $json['errors'] ) && is_array( $json['errors'] ) ) {
 				$first = reset( $json['errors'] );
 				$message = is_array( $first ) ? (string) reset( $first ) : $message;
