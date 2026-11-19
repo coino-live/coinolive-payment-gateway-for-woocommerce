@@ -2,12 +2,12 @@
 
 Accept USDT, Bitcoin, Ethereum, TRON, TON, Solana and other cryptocurrencies in your WooCommerce store. This free plugin connects your shop to the Coino Live crypto payment gateway (117 assets on 11 networks), and orders are marked paid automatically.
 
-**Version 1.1.1** · requires WordPress 6.2+, WooCommerce 7.6+, PHP 7.4+ · Free, GPL-2.0-or-later
+**Version 1.1.2** · requires WordPress 6.2+, WooCommerce 7.6+, PHP 7.4+ · Free, GPL-2.0-or-later
 
-- **Download:** [coinolive-woocommerce-1.1.1.zip](https://coino.live/downloads/coinolive-woocommerce-1.1.1.zip) · [WooCommerce plugin page](https://coino.live/woocommerce)
+- **Install from WordPress.org:** [wordpress.org/plugins/coinolive](https://wordpress.org/plugins/coinolive/) (search for "Coino Live" in Plugins > Add New) · **Download:** [coinolive-woocommerce-1.1.2.zip](https://coino.live/downloads/coinolive-woocommerce-1.1.2.zip) · [WooCommerce plugin page](https://coino.live/woocommerce)
 - **API reference:** [coino.live/api-guide](https://coino.live/api-guide) · **Support:** [support@coino.live](mailto:support@coino.live)
 
-> **Updating from the old version?** Earlier code in this repository used the Coino Live API v1, which has been retired: its endpoints (`/api/v1/...`) no longer answer. Version 1.1.1 uses the current [API v2](https://coino.live/api-guide). Replace the old files with these.
+> **Updating from the old version?** Earlier code in this repository used the Coino Live API v1, which has been retired: its endpoints (`/api/v1/...`) no longer answer. Version 1.1.2 uses the current [API v2](https://coino.live/api-guide). Replace the old files with these.
 
 ## Fees, sign-up and withdrawals
 
@@ -89,6 +89,10 @@ This plugin connects to the Coino Live API (https://coino.live/api/v2), the cryp
 Every request is authenticated with the API key you enter. The service is provided by Coino Live: [Terms of Service](https://coino.live/terms-of-service), [Privacy Policy](https://coino.live/privacy-policy).
 
 ## Changelog
+
+### 1.1.2
+- Plugin URI points to the plugin's page on coino.live.
+- Translations load on init; the WordPress.org package gets them from translate.wordpress.org.
 
 ### 1.1.1
 - Tested with WordPress 7.1.

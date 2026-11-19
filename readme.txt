@@ -6,7 +6,7 @@ Tested up to: 7.1
 Requires PHP: 7.4
 WC requires at least: 7.6
 WC tested up to: 9.9
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,6 +63,10 @@ This plugin connects to the Coino Live API (https://coino.live/api/v2), the cryp
 Every request is authenticated with the API key you enter. The service is provided by Coino Live: [Terms of Service](https://coino.live/terms-of-service), [Privacy Policy](https://coino.live/privacy-policy).
 
 == Changelog ==
+
+= 1.1.2 =
+* Plugin URI points to the plugin's page on coino.live.
+* Translations load on init; the WordPress.org package gets them from translate.wordpress.org.
 
 = 1.1.1 =
 * Tested with WordPress 7.1.

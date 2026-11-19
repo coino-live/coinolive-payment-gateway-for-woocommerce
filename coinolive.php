@@ -1,9 +1,9 @@
 <?php
 /**
  * Plugin Name:          Coino Live Crypto Payments
- * Plugin URI:           https://coino.live/plugins
+ * Plugin URI:           https://coino.live/woocommerce
  * Description:          Accept USDT, Bitcoin, Ethereum, TRON, TON, Solana and more in WooCommerce. Customers pay on the Coino Live checkout; orders update automatically.
- * Version:              1.1.1
+ * Version:              1.1.2
  * Author:               Coino Live
  * Author URI:           https://coino.live
  * License:              GPL-2.0-or-later
@@ -19,7 +19,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'COINOLIVE_VERSION', '1.1.1' );
+define( 'COINOLIVE_VERSION', '1.1.2' );
 define( 'COINOLIVE_FILE', __FILE__ );
 define( 'COINOLIVE_DIR', plugin_dir_path( __FILE__ ) );
 define( 'COINOLIVE_URL', plugin_dir_url( __FILE__ ) );
@@ -35,11 +35,14 @@ add_action(
 	}
 );
 
+// Only in the download from coino.live (see the file); WordPress.org delivers translations itself.
+if ( is_readable( COINOLIVE_DIR . 'includes/bundled-translations.php' ) ) {
+	require_once COINOLIVE_DIR . 'includes/bundled-translations.php';
+}
+
 add_action(
 	'plugins_loaded',
 	static function () {
-		load_plugin_textdomain( 'coinolive', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-
 		if ( ! class_exists( 'WC_Payment_Gateway' ) ) {
 			add_action(
 				'admin_notices',
